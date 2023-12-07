@@ -46,6 +46,7 @@ public class Client extends Thread {
                 MainActivity.communication=new Communication(socket);
                 MainActivity.communication.start();
                 MainActivity.lvDevices.setVisibility(View.INVISIBLE);
+                // MainActivity.btnHorn.setVisibility(View.VISIBLE);
             } catch (IOException e) {
                 try {
                     socket.close();

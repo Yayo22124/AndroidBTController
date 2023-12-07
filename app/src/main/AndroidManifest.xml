@@ -7,7 +7,6 @@
     <uses-feature android:name="android.hardware.sensor.gyroscope"/>
 
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +19,7 @@
         android:theme="@style/Theme.DemoNFS"
         tools:targetApi="31">
         <activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:name=".MainActivity"
             android:screenOrientation="landscape"
             android:exported="true">
